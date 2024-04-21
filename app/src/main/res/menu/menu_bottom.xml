@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/page_inicio"
+        android:icon="@drawable/icon_inicio"
+        android:title="Inicio"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/page_desarrolladores"
+        android:icon="@drawable/icon_desarrolladores"
+        android:title="Desarrolladores"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/page_configuracion"
+        android:icon="@drawable/icon_settings"
+        android:title="Configuración"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/page_link"
+        android:icon="@drawable/icon_link"
+        android:title="Página web"
+        tools:ignore="HardcodedText" />
+</menu>

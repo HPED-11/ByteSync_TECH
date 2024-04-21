@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/page_inicio"
+    android:id="@+id/nav"
+    tools:ignore="InvalidNavigation">
+
+    <fragment
+        android:id="@+id/page_inicio"
+        android:name="com.example.bytesync_tech.InicioFragment"
+        android:layout="@layout/fragment_inicio"/>
+
+    <fragment
+        android:id="@+id/page_desarrolladores"
+        android:name="com.example.bytesync_tech.DesarrolladoresFragment"
+        android:layout="@layout/fragment_desarrolladores"/>
+
+    <fragment
+        android:id="@+id/page_configuracion"
+        android:name="com.example.bytesync_tech.ConfiguracionFragment"
+        android:layout="@layout/fragment_configuracion"/>
+
+    <fragment
+        android:id="@+id/page_link"
+        android:name="com.example.bytesync_tech.LinkFragment"
+        android:layout="@layout/fragment_link"/>
+
+</navigation>

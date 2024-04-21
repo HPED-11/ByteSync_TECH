@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfiguracionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/iconred_settings"
+        tools:ignore="ContentDescription"
+        android:elevation="4dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/background_white"
+        android:elevation="0dp" />
+
+    <TextView
+        android:id="@+id/Settings1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="205dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="1dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Configuración"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/github_btn"
+        android:layout_gravity="center"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/rounded_codeblack"
+        android:backgroundTint="#000000"
+        android:padding="10dp"
+        android:text="Github"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:onClick="irAGithub"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        android:elevation="5dp" />
+
+    <Button
+        android:id="@+id/gitlab_btn"
+        android:layout_gravity="center"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/rounded_codeblack"
+        android:backgroundTint="#FC6D26"
+        android:padding="10dp"
+        android:text="GitLab"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:onClick="irAGitlab"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        android:elevation="5dp" />
+
+    <Button
+        android:id="@+id/version_btn"
+        android:layout_gravity="center"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/rounded_codeblack"
+        android:backgroundTint="@color/bytesync"
+        android:padding="10dp"
+        android:text="Versión"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:onClick="irAVersion"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        android:elevation="5dp" />
+
+    <Button
+        android:id="@+id/salir_btn"
+        android:layout_gravity="center"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_codeblack"
+        android:backgroundTint="@color/azulmedio"
+        android:padding="10dp"
+        android:text="Cerrar Sesión"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:onClick="cerrarSesion"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        android:elevation="5dp" />
+
+    <Button
+        android:id="@+id/hubweb_btn"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/rounded_codeblack"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Github - pagina web"
+        android:textColor="@color/gitlab"
+        android:textSize="18sp"
+        android:onClick="irAHubWeb"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        android:elevation="5dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/hubapp_btn"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.5dp"
+        android:background="@drawable/rounded_codeblack"
+        android:backgroundTint="@color/black"
+        android:padding="10dp"
+        android:text="Github - App móvil"
+        android:textColor="@color/gitlab"
+        android:textSize="18sp"
+        android:onClick="irAHubApp"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        android:elevation="5dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/labweb_btn"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/rounded_codeblack"
+        android:backgroundTint="@color/gitlab"
+        android:padding="10dp"
+        android:text="GitLab - página web"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:onClick="irALabWeb"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        android:elevation="5dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/labapp_btn"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.5dp"
+        android:background="@drawable/rounded_codeblack"
+        android:backgroundTint="@color/gitlab"
+        android:padding="10dp"
+        android:text="GitLab - app Móvil"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:onClick="irALabApp"
+        tools:ignore="HardcodedText,TextSizeCheck"
+        android:elevation="5dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/Settings2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="240dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:lineSpacingExtra="1dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text=""
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:text="©2024 ByteSync"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+</FrameLayout>
